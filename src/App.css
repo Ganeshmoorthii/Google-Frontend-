@@ -1,0 +1,33 @@
+/* Reset and global box model */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: black;
+  overflow-x: hidden;
+}
+
+/* React root container */
+#root {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Dark mode override using body.dark class */
+body.dark {
+  background-color: #242424;
+  color: white;
+}
+
+/* Optional: Smooth transitions when switching themes */
+body, input, button {
+  transition: background-color 0.3s, color 0.3s;
+}
